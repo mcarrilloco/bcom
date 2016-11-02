@@ -1,0 +1,82 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+
+        title BCOM Presentation
+
+        link(rel="stylesheet", href="css/reveal.css")
+        link(rel="stylesheet", href="css/theme/white.css")
+
+        // Theme used for syntax highlighting of code
+        link(rel="stylesheet", href="lib/css/zenburn.css")
+
+        link(rel="stylesheet", href="css/personal.css")
+
+        // Printing and PDF exports
+        script.
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+    body
+        .reveal
+            .slides
+                include ./slides/a1.pug
+                include ./slides/a2.pug
+
+                include ./slides/b1.pug
+                include ./slides/b2.pug
+                include ./slides/b3.pug
+                include ./slides/b4.pug
+                include ./slides/b5.pug
+                include ./slides/b6.pug
+
+                include ./slides/c1.pug
+                include ./slides/c2.pug
+                include ./slides/c3.pug
+                include ./slides/c4.pug
+                include ./slides/c5.pug
+                include ./slides/c6.pug
+
+                include ./slides/d1.pug
+                include ./slides/d2.pug
+                include ./slides/d3.pug
+
+                include ./slides/e1.pug
+                include ./slides/e2.pug
+                include ./slides/e3.pug
+                include ./slides/e4.pug
+                include ./slides/e5.pug
+
+                include ./slides/f1.pug
+                include ./slides/f2.pug
+                include ./slides/f3.pug
+                include ./slides/f4.pug
+                include ./slides/f5.pug
+
+                include ./slides/g1.pug
+
+                include ./slides/h1.pug
+                include ./slides/h2.pug
+                include ./slides/h3.pug
+
+                include ./slides/i1.pug
+
+        script(src="lib/js/head.min.js")
+        script(src="js/reveal.js")
+
+        script.
+            Reveal.initialize({
+                history: true,
+                slideNumber: true,
+                transition: 'none',
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
