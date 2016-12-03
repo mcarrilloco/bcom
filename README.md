@@ -1,6 +1,7 @@
 # BCOM Presentation
 
 Presentation for a course in Algorithms in Computational Biology.
+Hosted on Github Pages: (https://macarrillo.github.io/bcom)
 Made with [reveal.js](https://github.com/hakimel/reveal.js)
 
 You will require pug command that is available [here](https://github.com/pugjs/pug)
