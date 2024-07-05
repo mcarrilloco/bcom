@@ -2,7 +2,9 @@ name: Build and Deploy to github pages
 run-name: ${{ github.actor }} is publishing to github pages
 on:
   push:
-    branches: [$default-branch]
+    branches:
+      - master
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
