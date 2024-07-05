@@ -1,26 +1,19 @@
 # BCOM Presentation
 
-Presentation for a course in Algorithms in Computational Biology.
+Presentation for Algorithms in Computational Biology.
 Hosted on Github Pages: (https://mcarrilloco.github.io/bcom)
 Made with [reveal.js](https://github.com/hakimel/reveal.js)
 
-You will require pug command that is available [here](https://github.com/pugjs/pug)
+Pugjs cli [here](https://github.com/pugjs/pug)
 
-## To deploy
-
-```
-pug index.pug && git add -A && git commit -am "Test" && git push origin gh-pages
-```
-
-Without pug compilation:
+## To build
 
 ```
-git add -A && git commit -am "Test" && git push origin gh-pages
+pug index.pug
 ```
 
-# To run in local environtment
+# To serve locally
 
 ```
-pug -w index.pug &
-python -m SimpleHTTPServer &
+python -m http.server
 ```
