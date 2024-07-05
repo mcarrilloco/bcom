@@ -24,7 +24,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: $PUG_OUTPUT
+          path: ${{ env.PUG_OUTPUT }}
 
   # Deployment job
   deploy:
